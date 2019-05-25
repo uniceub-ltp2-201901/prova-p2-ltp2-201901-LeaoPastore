@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL</title>
+</head>
+<body>
+
+{% if erro %}
+    <span style="color:red">{{erro}}</span><br>
+{% endif %}
+
+<form action="/numero" method="post">
+    URL: <input type="text" name="url" size="100"><br><br>
+    <input type="submit" value="Cadastar">
+</form>
+
+<h2><a href="/ranking">Ranking Mais Acessados</a></h2>
+</body>
+</html>

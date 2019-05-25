@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranking</title>
+</head>
+<body>
+<h1>Ranking de Acesso</h1>
+    <table border="1">
+        <tr>
+            <th>URL</th>
+            <th>Contador</th>
+        </tr>
+
+        {% for ra in rank %}
+        <tr>
+            <td><a href="/{{ra[0]}}">http://localhost:5000/{{ra[0]}}</a></td>
+            <td>{{ra[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
